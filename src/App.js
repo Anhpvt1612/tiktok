@@ -3,7 +3,7 @@ import './App.css';
 import Button from '~/componet/Button';
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Button />
     </div>
   );

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const handleAlert = () => {
-    return (
-        alert('Click me!')
-    )
-}
+  return alert('Click me!');
+};
 
-export default handleAlert
+export default handleAlert;
