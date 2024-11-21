@@ -1,13 +1,18 @@
 import React from 'react';
-import Header from './Header';
+import classNames from 'classnames/bind';
+import styles from './DefaultLayout.module.scss';
+import Header from '~/component/Layout/components/Header';
 import SideBar from './SideBar';
-const index = ({children}) => {
+
+const cx = classNames.bind(styles);
+
+const index = ({ children }) => {
     return (
-        <div>
+        <div className={cx('wrapper')}>
             <Header />
-            <div>
+            <div className={cx('container')}>
                 <SideBar />
-                <div className='content'>{children}</div>
+                <div className={cx('content')}>{children}</div>
             </div>
         </div>
     );
